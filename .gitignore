@@ -17,5 +17,5 @@ data/*
 paper
 experiments/logs
 
-
+jars
 *.pyc
