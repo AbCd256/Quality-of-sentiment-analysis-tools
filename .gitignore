@@ -5,9 +5,13 @@ code/sentiment_analysis_tools/__pycache__/*
 code/sentiment_analysis_tools/simple_cnn_word_embedding/model/*
 code/sentiment_analysis_tools/cnn_with_bert/model/*
 code/sentiment_analysis_tools/char_embedding_cnn/model/*
+code/sentiment_analysis_tools/char_embedding_cnn/data/results/*
 
+**/__pycache__/*
 experiments/logs/*
 data/*
 paper
 experiments/logs
 
+
+*.pyc
