@@ -47,13 +47,13 @@ The different polarity labels in different datasets are attributed as follows:
 	 * positive : 3<golden <=5 
 	 
 * Sentiment Treebank 
-    * negative : 0 <= golden <= 0.4
+   * negative : 0 <= golden <= 0.4
    * neutral : 0.4 < golden <= 0.6
    *  positive : 0.6< golden <= 1 
 	 
 * News headlines dataset
-     * negative : -1 <= golden < 0
-	 * neutral : golden = 0
+        * negative : -1 <= golden < 0
+	* neutral : golden = 0
 	* positive : 0< golden <= 1 
 
 * First GOP debate
@@ -101,7 +101,9 @@ python `method'.py --input_path input_path.csv  --out_path output_path.csv
 ```
 
 `--input_path`  the path to the input data.
+
 `--out_path`  the path to save the results.
+
 `method` Vader, Sentiwordnet, Senticnet, rec_nn
 2- To apply machine learning methods to your data
 
