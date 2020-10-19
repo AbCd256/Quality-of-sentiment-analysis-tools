@@ -15,16 +15,16 @@ The project contains implementations of the state-of-the-art sentiment analysis 
 This directory contains the codes of the project. It is structured as follows:
 * `Sentiment_analysis_tools`  containes the six sentiment analysis tools evaluated in the study:
   * Vader:  allows to do sentiment analysis using the word-lexicon vader 
-  * senticnet5:  allows to do sentiment analysis using the concept-lexicon vader 
-  * sentiwordnet:  allows to do sentiment analysis using the word-lexicon vader 
+  * senticnet5:  allows to do sentiment analysis using the concept-lexicon Senticnet 
+  * sentiwordnet:  allows to do sentiment analysis using the word-lexicon sentiwordnet 
   * rec_nn  allows to do sentiment analysis using the 
   * cnn_text allows to do sentiment analysis using kim's cnn with word embedding from googe news or Gleve
   * char_cnn allows to do sentiment analysis with cnn that use two embedding tpes: word2ve embedding +char embedding
   * bert_cnn: allows to do sentiment analysis using embedding from pretrained bert + cnn 
-* `Calculate inconsistency.py` allows to calculate the inconsistency in different sentiment analysis tools
-* `hyper paramaters_inc.py`  Provides different tunings possibbilities for sentiment analysis tool on cnn text
-* `normalize_dataset` Allows to unify the structure of datasets, (unify the polarity, predicted and generalized...) 
-* `Quality verification` The implimentation of the the heuristics we used to enhance the quality of the generate dataset
+* `calculate_inconsistency.py` allows to calculate the inconsistency in different sentiment analysis tools
+* `hyperparamaters_inc.py`  Provides different tunings possibbilities for sentiment analysis tool on cnn text
+* `normalize_dataset.py` Allows to unify the structure of datasets, (unify the polarity, predicted and generalized...) 
+* `quality_verification.py` The implimentation of the the heuristics we used to enhance the quality of the generate dataset
  ## Data 
  Data are in the following drive: 
 https://drive.google.com/drive/folders/1jdpZtsz06CY6FtYVbvmK_BvrsQc_FIUL?usp=sharing
@@ -39,7 +39,7 @@ mentioned in "Adversarial Example Generation with Syntactically Controlled Parap
 NB: Reviews that are semantically equivalent have the same Id 
 
 
-### Polarity labels 
+#### Polarity labels 
 
 The different polarity labels in different datasets are attributed as follows: 
 * Amazon
