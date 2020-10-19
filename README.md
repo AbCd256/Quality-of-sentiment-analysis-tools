@@ -57,8 +57,11 @@ The different polarity labels in different datasets are attributed as follows:
 	* positive : 0< golden <= 1 
 
 * First GOP debate
+
  It has three polarity labels: positive, negative, and neutral
+ 
  * US airlines tweets
+ 
  It has three polarity labels: positive, negative, and neutral
 
  
