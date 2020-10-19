@@ -4,11 +4,8 @@
 
 # Description 
 
-This is the material for the paper: Data quality in sentiment analysis tools: The reasons of inconsistency
-
-The project contains implementations of the state-of-the-art sentiment analysis algorithms, the experements code, the resuts, and informations about the datasets used. 
-
-
+This project is the material for the paper: Data quality in sentiment analysis tools: The reasons of inconsistency
+The project contains implementations of the state-of-the-art sentiment analysis algorithms, the code of the experiment, the results, and information about the datasets used.
 
 
 
