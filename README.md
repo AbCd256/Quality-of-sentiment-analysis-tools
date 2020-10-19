@@ -62,7 +62,7 @@ The different polarity labels in different datasets are attributed as follows:
 
 * First GOP debate
  * US airlines tweets
-####  NB: 	 
+ NB: 	 
 *  Data in the folder "sentiment_dataset_original" represents the original sentiment datasets.
 * The folder "sentiment_dataset_with_labels" contains the datasets after converting sentiment score to labels.
 *  The folder "sentiment_dataset_augmented" contains the augmented datasets before cleaning 
@@ -74,9 +74,9 @@ The different polarity labels in different datasets are attributed as follows:
 
 
 This package is organized as follow: 
-*scripts: contains all the scripts of our experements 
-*logs: containes  the logs of our experements
-*plots: containes  different plots of the experements
+* `scripts` contains all the scripts of our experements 
+* `logs` containes  the logs of our experements
+* `plots` containes  different plots of the experements
 
 
 
