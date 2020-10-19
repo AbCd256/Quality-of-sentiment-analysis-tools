@@ -69,7 +69,7 @@ The different polarity labels in different datasets are attributed as follows:
 (data of this folder will e added after acceptation)
 
 
-## Experements
+## Experiments
 
 
 This package is organized as follow: 
@@ -85,27 +85,32 @@ This package is organized as follow:
 
 
 ## Requirements 
-This project was developed on Python 3.6.6
+This project was developed on Python 3.6.6. 
+To install the requirements, run the following command: 
+
 ```shell
 pip install requirement.txt
 ```
 
 
 
-1- To apply sentiment analysis tools to your data,
+1- To apply sentiment analysis tools to your data:
+
 ```shell
-python `method'.py --input_path "input_path".csv  --out_path "out_path".csv
+python `method'.py --input_path input_path.csv  --out_path output_path.csv
 ```
+
 `--input_path`  the path to the input data.
- `--out_path`  the path to save the results.
- `method` Vader, sentiwordnet, Senticnet, rec_nn
-2- For machine learning methods: 
+`--out_path`  the path to save the results.
+`method` Vader, Sentiwordnet, Senticnet, rec_nn
+2- To apply machine learning methods to your data
+
 * Download a pre-trained model
-* Download the word2vec pre-trained model  
+* Download the word2vec pre-trained model  (word2vec-GoogleNews-vectors or Glove)
  
  ### Example
 ```shell
-python text_cnn_predict.py --input_path "input_path".csv   --save_path  "model_path".pl --w2v_path "word2vec_file"  --embedding_type   --out_path "output_path".csv
+python text_cnn_predict.py --input_path input_path.csv   --save_path  model_path.pl --w2v_path word2vec_file  --embedding_type   --out_path output_path.csv
 ```
 `--input_path` the path to the input data.
 `--save_path  ` the path to the model 
@@ -113,34 +118,36 @@ python text_cnn_predict.py --input_path "input_path".csv   --save_path  "model_p
 `--embedding_type` the embedding type (Gnews, Glove)
 `--out_path` path to save the resulted log
 
-3- You can also  train the CCNs it using your oun data 
+3- To train the CCNs using other datasets
+
+
 ```shell
-python text_cnn_train.py --input_path  --save_path --w2v_path --embedding_type 
+python text_cnn_train.py --input_path  training_data.csv --save_path models_dir --w2v_path word2vec_file --embedding_type  Gnews
 ```
-4- To reproduce results  : 
+4- To reproduce experimental results  : 
 * Generate the logs 
-  *  for inconsistency experements 
+   - For inconsistency experiments 
 ```shell
- python calculate_inconsystency.py --log_path  --out_path  --function 
+ python calculate_inconsystency.py --input_path path_to_input_data  --out_path path_to_save_logs  --function  exp
  ```
 
-`--function` the experement that we awant to generate its logs (intool_inconsistency, intertool_inconsistency, intool_inconsistency_type, intertool_inconsistency_type,  intool_inc_polar_fact, intool_inconsistency_cos_wmd) 
-   *  for hyperparamaters tuning experements 
+`--function` The experiment that we want to generate its logs (intool_inconsistency, intertool_inconsistency, intool_inconsistency_type, intertool_inconsistency_type,  intool_inc_polar_fact, intool_inconsistency_cos_wmd).
+   *  For hyperparameters tuning and inconsistency experiments 
+
   ```shell
  python hyperparameters_inc.py --input_path --out_path  --function 
  ```
-*  for time experements 
+*  For time experiments 
 ```shell
-python  time_exp.py --input_path  --out_path
+python  time_exp.py --input_path path_to_input_data  --out_path path_to_save_logs
  ```
 * Generate the plots
 ```shell
- python 'exp'.py --log_path  
+ python 'exp'.py --log_path  path_to_data_logs   
  ```
 
-`log_path` path to experement logs
-exp: the experement we want to run. The experements are in the folder Experements/script
-
+`log_path` path to the experiment logs
+exp: the experiment we want to run. The experiments are in the folder Experiments/script
 
 
 
