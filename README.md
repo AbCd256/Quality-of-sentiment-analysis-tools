@@ -62,6 +62,8 @@ The different polarity labels in different datasets are attributed as follows:
 
 * First GOP debate
  * US airlines tweets
+ 
+ 
  NB: 	 
 *  Data in the folder "sentiment_dataset_original" represents the original sentiment datasets.
 * The folder "sentiment_dataset_with_labels" contains the datasets after converting sentiment score to labels.
